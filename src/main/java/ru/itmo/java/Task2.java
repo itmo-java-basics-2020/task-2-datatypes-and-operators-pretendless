@@ -56,7 +56,7 @@ public class Task2 {
      * Даны два вещественных числа. Определите равны ли они
      */
     boolean areRealNumbersEqual(double a, double b) {
-        return 0 == Double.compare(a, b); //your code here
+        return Math.abs(a - b) < 1e-12; //your code here
     }
 
     /**
