@@ -25,7 +25,7 @@ public class Task2 {
      * Даны 2 целых числа. Проверьте равны ли они
      */
     boolean testIfIntsEqual(Integer a, Integer b) {
-        return a == b;
+        return (int)a == (int)b;
     }
 
     /**
@@ -56,7 +56,7 @@ public class Task2 {
      * Даны два вещественных числа. Определите равны ли они
      */
     boolean areRealNumbersEqual(double a, double b) {
-        return a == b; //your code here
+        return (double)a == (double)b; //your code here
     }
 
     /**
@@ -80,14 +80,14 @@ public class Task2 {
      * своем кабинете
      */
     int schoolDesks(int num1, int num2, int num3) {
-        return (num1 + num1 % 2) + (num2 + num2 % 2) + (num3 + num3 % 2); //your code here
+        return ((num1 + num1 % 2) + (num2 + num2 % 2) + (num3 + num3 % 2))/2; //your code here
     }
 
     /**
      * Дано натуральное число N >= 10. Выведите результат применения XOR к последним 2-м цифрам числа N
      */
     int xorDigits(int N) {
-        return 100 - N % 100;
+        return (N % 10) ^ (N % 100 / 10);
     }
 
 }
